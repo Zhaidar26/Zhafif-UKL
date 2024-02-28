@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="booking.css?v=<?php echo time(); ?>">
+    <title>Booking</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box from-box">
+            <header>Booking</header>
+            <form action="booking.php" method="post">
+                <div class="field-input">
+                    <i data-feather="mail"></i>
+                    <input type="text" name="email" placeholder="Email" required>
+                </div><br>
+                <div class="field-input">
+                    <i data-feather="user"></i>
+                    <input type="text" name="nama" placeholder="Nama" required>
+                </div><br>
+                <div class="field-input">
+                    <i data-feather="map-pin"></i>
+                    <input type="text" name="lokasi" placeholder="Lokasi" required>
+                </div><br>
+                <div class="field-input">
+                    <i data-feather="calendar"></i>
+                    <input type="date" name="tanggal" placeholder="Tanggal" required>
+                </div><br>
+                <div class="field-input">
+                    <i data-feather="shopping-cart"></i><br>
+                    <select name="harga" id="level">
+                        <option value="1.000.000">1.000.000</option>
+                        <option value="5.000.000">5.000.000</option>
+                    </select>
+                </div><br>
+                <div class="field-input">
+                    <i data-feather="truck"></i><br>
+                    <select name="transportasi" id="level">
+                        <option value="pesawat">Pesawat</option>
+                        <option value="kapal">Kapal</option>
+                        <option value="kereta">Kereta</option>
+                        <option value="bis">Bis</option>
+                    </select>
+                </div><br>
+                <div class="field">
+                    <a href="booking.php"><button class="btn">Booking</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        feather.replace();
+      </script>
+</body>
+</html>
